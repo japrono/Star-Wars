@@ -5,7 +5,7 @@ and displaying it in a table.
 
 ## How to run
 
-In the project directory, you run:
+In the project root directory, you run:
 
 ### `npm install`
 ### `npm start`
@@ -19,3 +19,4 @@ In the project directory, you run:
 ![Alt text](Screenshot5.png?raw=true "Title")
 
 ## GIF Demo of the application
+![Alt text](Demo.gif?raw=true "Title")
