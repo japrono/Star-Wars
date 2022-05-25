@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+.TableHeader {
+  font-size: 108% !important;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.TableHeader:hover {
+  background: #fafafa !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.TableHeaderContents {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#TableContainer tr:nth-child(odd) td{
+  background: whitesmoke;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#TableContainer tr:nth-child(even) td{
+  background: #fafafa;
+}
+
+#navigationElement {
+  align-items: center;
+  text-align: center;
+  background: #f6f6f6;
+  justify-content: center;
+  min-height: 50px;
+  border-top: 1px solid Gainsboro;
+}
+
+#searchField {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#navigationElementPages {
+  background: #f6f6f6;
+  text-align: center;
+  justify-content: center;
+  border-bottom: 2px solid Gainsboro;
+}
+
+.blurryText {
+  filter:blur(2px);
+}
+
+html {
+  background: #e6e9ec;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.CloseIcon:hover {
+  color: gray !important;
+  cursor: pointer;
+}
+
+#DialogTitleContent {
+  display: flex;
+}
+
+.CloseIconContainer {
+  padding-top: 5px;
+  margin-left: auto;
+}
+
+.clickable_link:hover {
+  color: navy !important;
+  cursor: pointer !important;
+}
+
+.clickable_link {
+  color: blue;
+  cursor: pointer;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  width: min-content;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
+}
+
+.disabledElement {
+  pointer-events: none !important;
+}
+
+@media(max-width: 800px) {
+  #navigationElement {
+    width: 100vw;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media(min-width: 801px) {
+  #navigationElementPages {
+    margin-left: 25px;
+    width: calc(100vw - 50px);
+  }
+
+  #navigationElement {
+    margin-left: 25px;
+    width: calc(100vw - 50px);
+  }
+
+  #TableContainer {
+    margin-left: 25px;
+    width: calc(100vw - 50px);
   }
 }
