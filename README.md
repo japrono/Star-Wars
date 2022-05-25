@@ -12,6 +12,9 @@ In the project directory, you run:
 
 
 ## Screenshots of the application
-Todo
-Todo
-Todo
+![Alt text](Screenshot1.png?raw=true "Title")
+
+
+
+
+## GIF Demo of the application
